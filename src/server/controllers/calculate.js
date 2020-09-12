@@ -5,7 +5,7 @@ exports.add = (req, res) => {
     return res.json({ status: "error", message: "Invalid data types" });
   }
 
-  if (num1 > 1000000 || num2 > 1000000) {
+  if (num1 >= 1000000 || num2 >= 1000000) {
     return res.json({ status: "error", message: "Overflow" });
   }
 
@@ -23,9 +23,9 @@ exports.sub = (req, res) => {
     return res.json({ status: "error", message: "Invalid data types" });
   }
 
-  if (num1 < 1000000 || num2 < 1000000) {
-    return res.json({ status: "error", message: "Underflow" });
-  }
+  // if (num1 < 1000000 || num2 < 1000000) {
+  //   return res.json({ status: "error", message: "Underflow" });
+  // }
 
   return res.json({
     status: "success",
