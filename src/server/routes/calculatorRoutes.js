@@ -13,6 +13,6 @@ router.post("/sub", sub);
 
 router.post("/multiply", multiply);
 
-router.post("/division", division);
+router.post("/divide", division);
 
 module.exports = router;
