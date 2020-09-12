@@ -2,7 +2,7 @@ exports.add = (req, res) => {
   const { num1, num2 } = req.body;
 
   if (typeof num1 === "string" || typeof num2 === "string") {
-    return res.json({ status: "error", message: "invalid data types" });
+    return res.json({ status: "error", message: "Invalid data types" });
   }
 
   if (num1 > 1000000 || num2 > 1000000) {
@@ -20,7 +20,7 @@ exports.sub = (req, res) => {
   const { num1, num2 } = req.body;
 
   if (typeof num1 === "string" || typeof num2 === "string") {
-    return res.json({ status: "error", message: "invalid data types" });
+    return res.json({ status: "error", message: "Invalid data types" });
   }
 
   if (num1 < 1000000 || num2 < 1000000) {
@@ -38,7 +38,7 @@ exports.multiply = (req, res) => {
   const { num1, num2 } = req.body;
 
   if (typeof num1 === "string" || typeof num2 === "string") {
-    return res.json({ status: "error", message: "invalid data types" });
+    return res.json({ status: "error", message: "Invalid data types" });
   }
 
   if (num1 > 1000000 || num2 > 1000000) {
@@ -48,7 +48,7 @@ exports.multiply = (req, res) => {
   return res.json({
     status: "success",
     message: "The product of given numbers",
-    sum: num1 * num2,
+    result: num1 * num2,
   });
 };
 
@@ -62,6 +62,6 @@ exports.division = (req, res) => {
   return res.json({
     status: "success",
     message: "The division of given numbers",
-    sum: num1 / num2,
+    result: num1 / num2,
   });
 };
