@@ -68,6 +68,6 @@ exports.division = (req, res) => {
   return res.json({
     status: "success",
     message: "The division of given numbers",
-    sum: num1 / num2,
+    result: num1 / num2,
   });
 };
