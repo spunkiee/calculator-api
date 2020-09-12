@@ -33,7 +33,7 @@ exports.sub = (req, res) => {
 
   return res.json({
     status: "success",
-    message: "the difference of given two number",
+    message: "the difference of given two numbers",
     sum: result,
   });
 };
@@ -54,7 +54,7 @@ exports.multiply = (req, res) => {
   return res.json({
     status: "success",
     message: "The product of given numbers",
-    sum: result,
+    result: result,
   });
 };
 
